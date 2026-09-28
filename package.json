@@ -1,0 +1,32 @@
+{
+  "name": "orangehrm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --project=chromium",
+    "test:all": "npx playwright test",
+    "test:headed": "npx playwright test --project=chromium --headed",
+    "test:login": "npx playwright test tests/login.spec.ts --project=chromium",
+    "test:dashboard": "npx playwright test tests/dashboard.spec.ts --project=chromium",
+    "test:pim": "npx playwright test tests/pim.spec.ts --project=chromium",
+    "test:leave": "npx playwright test tests/leave.spec.ts --project=chromium",
+    "test:directory": "npx playwright test tests/directory.spec.ts --project=chromium",
+    "test:myinfo": "npx playwright test tests/myinfo.spec.ts --project=chromium",
+    "test:admin": "npx playwright test tests/admin.spec.ts --project=chromium",
+    "test:buzz": "npx playwright test tests/buzz.spec.ts --project=chromium",
+    "test:e2e": "npx playwright test tests/e2e-workflows.spec.ts --project=chromium",
+    "test:debug": "npx playwright test --project=chromium --debug",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.5.1",
+    "dotenv": "^17.4.2",
+    "typescript": "^7.0.2"
+  }
+}
